@@ -53,7 +53,7 @@ def load_batch_image(idx):
 test_all = glob.glob("cityscapes/val/*.jpg")
 		     
 def load_test_image(idx):
-	full_image = imread(train_all[idx])
+	full_image = imread(test_all[idx])
 	img_A = np.asarray(full_image[:, :full_image.shape[1]/2, :])/255.
 		     
 	return img_A
